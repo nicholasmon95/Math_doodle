@@ -4,6 +4,18 @@ import tkinter.ttk as ttk
 root = tk.Tk()
 root.title("Jump for Math")
 
+# Create a title label
+title_label = tk.Label(
+    root, 
+    text="Jump for Math!",  # The title text
+    font=("Arial", 24, "bold"),  # Font size and style
+    fg="white",  # Text color
+    bg="black"  # Background color of the label
+)
+# Make the label span the width of the window
+title_label.pack(fill="x", pady=10)  # fill="x" stretches it horizontally
+
+
 # User settings dictionary 
 users_settings = {"color": None, "difficulty": None}
 
